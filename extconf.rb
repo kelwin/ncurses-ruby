@@ -22,7 +22,7 @@
 
 require "mkmf"
 
-$CFLAGS  += " -g"
+$CFLAGS  += " -g -DNCURSES_OPAQUE=0"
 $CXXFLAGS  = $CFLAGS
 
 have_header("unistd.h")
